@@ -1,0 +1,24 @@
+first init the LCD and KeyPad
+
+take input from user and check number or operation -----> enum
+switch
+case:  number ......> change the flag to number from enum  
+			1- show on LCD 
+			2- Inc place on LCD ---> variable to controle the positions or "the current column number "
+			3- countinue taking input until user enter operation ------> need variable to indicate current operand
+			4- if current operand ---> operand*10 + new input
+			5- if new operand then do the same steps from 3 ----> need array to carry opearnds
+			6- inc array of operands index
+
+case:  operation ---> 
+		if flag == operation--------> flag to operation
+				1- dec LCD positions 
+				2- show the new the operation 
+				3- save the operation in array of opertaors in cuerrun index -1 
+		else
+			flag to operation
+			1- show onn LCD
+			2- Inc LCD current position  
+			3- operation "array" carry the operators
+			4- inc the array of operator index
+
